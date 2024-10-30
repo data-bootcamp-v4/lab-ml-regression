@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="CryoSleep_False <= 0.5\nsquared_error = 0.25\nsamples = 4954\nvalue = 0.502", fillcolor="#f4ccaf"] ;
+1 [label="HomePlanet_Earth <= 0.5\nsquared_error = 0.152\nsamples = 1743\nvalue = 0.814", fillcolor="#eb9c63"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Cabin_E <= 0.5\nsquared_error = 0.043\nsamples = 921\nvalue = 0.955", fillcolor="#e68641"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.011\nsamples = 827\nvalue = 0.989", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.225\nsamples = 94\nvalue = 0.66", fillcolor="#efb489"] ;
+2 -> 4 ;
+5 [label="Destination_55 Cancri e <= 0.5\nsquared_error = 0.226\nsamples = 822\nvalue = 0.655", fillcolor="#f0b48a"] ;
+1 -> 5 ;
+6 [label="squared_error = 0.233\nsamples = 704\nvalue = 0.632", fillcolor="#f0b88f"] ;
+5 -> 6 ;
+7 [label="squared_error = 0.167\nsamples = 118\nvalue = 0.788", fillcolor="#eba06a"] ;
+5 -> 7 ;
+8 [label="FoodCourt <= 0.045\nsquared_error = 0.222\nsamples = 3211\nvalue = 0.333", fillcolor="#fae6d8"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Age <= 0.158\nsquared_error = 0.207\nsamples = 2768\nvalue = 0.292", fillcolor="#fbece1"] ;
+8 -> 9 ;
+10 [label="squared_error = 0.223\nsamples = 235\nvalue = 0.664", fillcolor="#efb388"] ;
+9 -> 10 ;
+11 [label="squared_error = 0.191\nsamples = 2533\nvalue = 0.257", fillcolor="#fcf2ea"] ;
+9 -> 11 ;
+12 [label="Spa <= 0.052\nsquared_error = 0.242\nsamples = 443\nvalue = 0.591", fillcolor="#f2be99"] ;
+8 -> 12 ;
+13 [label="squared_error = 0.2\nsamples = 337\nvalue = 0.724", fillcolor="#edaa79"] ;
+12 -> 13 ;
+14 [label="squared_error = 0.141\nsamples = 106\nvalue = 0.17", fillcolor="#ffffff"] ;
+12 -> 14 ;
+}
